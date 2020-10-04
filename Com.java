@@ -8,8 +8,9 @@ public class Com
 	{
 	    Scanner c=new Scanner(System.in);
 	    System.out.println("Enter pincode");
-	    String n=c.next();
-		System.out.println(Pattern.matches("^[1-9]{6}",n));
+	    String n=c.nextLine();
+	    System.out.println("String is"+n);
+		System.out.println(Pattern.matches("^[1-9]{1}[0-9]{2}\s{0,1}[0-9]{3}$",n));
 		c.close();
 	}   
 }
